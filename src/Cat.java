@@ -11,14 +11,14 @@
 		
 		// 2. Get the Cat to print it's name
 
-		// 3. Kill the Cat!
+		// 3. Kill (feed) the Cat!  -_-,
 
 
 
 public class Cat {
 
 	private String name;
-	private int lives = 9;
+	private int hunger = 10;
 
 	Cat(String name) {
 		this.name = name;
@@ -35,16 +35,20 @@ public class Cat {
 			System.out.println("my name is " + name);
 	}
 
-	void kill() {
-		lives--;
-		if (lives > 0)
-			System.out.println("nice try, but I still have " + lives + " lives left");
-		else if (lives < 0)
-			System.out.println("that's overkill yo!");
+	void feedFish() {
+		hunger--;
+		if (hunger > 0)
+			System.out.println("My hunger level is still at  " + hunger + "! I wants more fishies!");
+		else if (hunger < 0)
+			System.out.println("Admit it, you're not dat hungy");
 		else
-			System.out.println("DEAD CAT :(");
+			System.out.println("FULL CAT! :)");
 	}
 
+	public int gethunger() {
+		return this.hunger;
+	}
+	
 
 }
 
