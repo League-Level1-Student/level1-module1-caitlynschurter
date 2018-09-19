@@ -33,6 +33,10 @@ public class Smurf {
 			return "I'm Papa Smurf, and I have a red hat";
 		}
 		
+		else if(name.equals("Smurfette")) {
+			return "I'm Smurfette, and I have a white hat";
+		}
+		
 		else {
 			return "I'm " + name + " Smurf, and I have a white hat";
 		}
@@ -41,6 +45,8 @@ public class Smurf {
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
+	
+		
 		// 4. Fill in this method
 		return "";
 	}
